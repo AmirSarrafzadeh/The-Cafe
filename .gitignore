@@ -1,0 +1,15 @@
+# Python specific files
+__pycache__/
+*.py[cod]
+*.so
+.env
+.venv
+.DS_Store
+# Database files
+*.sqlite3
+*.db
+# Log files
+*.log
+# Docker and local environment files
+docker-compose.override.yml
+ 

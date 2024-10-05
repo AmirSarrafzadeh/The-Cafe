@@ -1,0 +1,192 @@
+/* Styling the body to remove any default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the top bar */
+.top-bar {
+    background-color: #333; /* Dark background for the bar */
+    color: white; /* Text color */
+    display: flex; /* Using flexbox to align items */
+    justify-content: space-around; /* Even spacing around items */
+    padding: 15px 0; /* Padding: 8px top and bottom, 0 left and right */
+    width: 100%; /* Full width */
+}
+
+.top-bar a {
+    color: white; /* Maintains the white text color for links */
+    text-decoration: none; /* Removes underline from links */
+    padding: 8px; /* Optional: adds padding to make links easier to click */
+    font-size: 22px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline; /* Adds an underline on hover for visual feedback */
+}
+
+.image-container {
+    position: relative; /* Sets up the image container for relative positioning */
+    text-align: center; /* Centers content */
+}
+
+.image-container img {
+    width: 100%; /* Makes the image full width */
+    height: 550; /* Sets the height of the image */
+    
+}
+
+.text-over-image {
+    position: absolute; /* Absolute position to place text over the image */
+    top: 15%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning */
+    color: white; /* Text color */
+    font-size: 60px; /* Text size */
+    font-weight: bold; /* Text weight */
+}
+
+.bottom-left-text {
+    position: absolute; /* Absolute position to place text at the bottom left */
+    bottom: -30px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: #333; /* Text color */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Text weight */
+}
+
+.about-cafe {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.about-cafe h2, .about-cafe h3 {
+    font-size: 32px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.about-cafe p, .about-cafe td, .about-cafe th {
+    text-align: justify;
+    margin: 8px 40px;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #555;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.motto-box, .cafe-details, .menu-table {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-style: italic;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.menu-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.menu-table thead tr:first-child th {
+    font-size: 24px; /* Change this size to adjust "Foods" and "Drinks" */
+    font-weight: bold; /* Optional: makes the text bold */
+}
+
+.menu-table th, .menu-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center; /* Centering text in the table headers and cells */
+    vertical-align: top;
+}
+
+.cafe-details p {
+    text-align: center; /* Ensures the text is horizontally centered */
+    margin: 8px auto; /* Auto margins for horizontal centering */
+    padding: 10px; /* Comfortable padding around the text */
+    font-size: 18px; /* Maintains consistent font size */
+    color: #333; /* Dark color for better readability */
+    background-color: #f9f9f9; /* Light background to stand out */
+    width: 80%; /* Matches the width of other content boxes */
+    border: 1px solid #ccc; /* Subtle border for definition */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Light shadow for depth */
+}
+
+
+.image-box {
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+.drink-image-box {
+    margin: 20px auto; /* Centers the image container */
+    width: 50%; /* Make the box smaller than the full width */
+    padding: 10px; /* Optional: add padding around the image */
+    border: 1px solid #ccc; /* Optional: add a subtle border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a light shadow for depth */
+}
+
+.drink-image-box img {
+    width: 100%; /* Make the image fit the container */
+    height: auto; /* Keep the aspect ratio */
+}
+
+
+.reservation-form {
+    width: 50%; /* Adjust the form width as needed */
+    margin: 20px auto; /* Center the form on the page */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-input {
+    width: 80%; /* Decrease the width of the input fields */
+    padding: 15px; /* Keep the padding the same to maintain height */
+    margin: 10px auto; /* Center the input fields */
+    border: 2px solid #ccc; /* Light border around inputs */
+    border-radius: 10px; /* Rounded corners for inputs */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2); /* Blue shadow similar to the image */
+    font-size: 16px; /* Font size remains the same */
+    display: block; /* Ensures the input fields stay centered */
+}
+
+
+.form-input:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #b3b3ff; /* Light blue border on focus */
+    background-color: #f0e6ff; /* Light background color on focus */
+}
+
+.submit-btn {
+    width: 100%; /* Full width for the button */
+    padding: 15px; /* Padding inside button */
+    margin-top: 10px; /* Margin above the button */
+    background-color: #e6e6ff; /* Light background for button */
+    border: 2px solid #ccc; /* Button border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.submit-btn:hover {
+    background-color: #d6d6ff; /* Darker background on hover */
+    border-color: #b3b3ff; /* Darker border on hover */
+}

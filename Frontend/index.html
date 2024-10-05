@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Top Bar with Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <a href="#home">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#menu-section">Menu</a>
+        <a href="#reserve-section">Reserve</a>
+    </div>
+    <div class="image-container">
+        <img src="cafe.jpg" alt="Cafe Image">
+        <div class="text-over-image">The Cafe</div>
+        <div class="bottom-left-text">Enjoy Your Visit!</div>
+    </div>
+    <div id="about-section" class="about-cafe">
+        <h2>About the Cafe</h2>
+        <p>
+            Established in the autumn of 1995 by the esteemed local chef Giovanni Bellini, Bellini's Cafe was initially
+            conceptualized as a modest artisanal coffee corner situated in the heart of Milan’s bustling historic
+            district. Giovanni, whose passion for coffee was matched only by his love for authentic Italian baking,
+            sourced his coffee beans from small, sustainable farms in Colombia and Brazil. The cafe quickly
+            distinguished itself with its signature blend of Espresso Roast, which remains a favorite among patrons to
+            this day.
+        </p>
+        <p>
+            By the early 2000s, as the cafe’s reputation grew, Giovanni decided to expand the menu to include homemade
+            pastries and delicate confections, all crafted from family recipes that dated back generations. In 2010,
+            Bellini’s embraced the farm-to-table movement, incorporating organic teas and locally sourced ingredients
+            into its offerings. This pivot not only broadened its menu but also strengthened its commitment to
+            environmental stewardship. Bellini’s now hosts monthly culinary workshops and seasonal tasting events,
+            drawing food enthusiasts from across the region.
+        </p>
+        <p>
+            Today, Bellini's Cafe is not just a place to grab a quick espresso; it has evolved into a cultural hub,
+            supporting local artists and musicians through regular gallery nights and live performances. With its rich
+            history and community-focused ethos, Bellini's Cafe serves over 800 customers daily, continually adapting
+            and flourishing as a beacon of culinary excellence and sustainable business practices.
+        </p>
+        <div class="motto-box">
+            "Use products from nature for what it's worth - but never too early, nor too late. 'Fresh' is the new sweet"
+            <br>
+            <span class="author">Chef, Coffeist and Owner: Giovanni Bellini</span>
+        </div>
+        <div class="image-box">
+            <img src="service.jpg" alt="Service at the Cafe">
+        </div>
+        <div class="cafe-details">
+            <p>Opening Time: 6 A.M - 8 P.M</p>
+            <p>Address: Via Garibaldi, 329</p>
+        </div>
+        <h3 id="menu-section">Menu</h3>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Foods</th>
+                    <th>Drinks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bruschetta Al Pomodoro</strong><br>Tomatoes, basil, garlic</td>
+                    <td><strong>Espresso Romano</strong><br>Espresso, lemon zest</td>
+                </tr>
+                <tr>
+                    <td><strong>Caprese Salad</strong><br>Mozzarella, tomatoes, basil</td>
+                    <td><strong>Italian Cappuccino</strong><br>Espresso, steamed milk, foam</td>
+                </tr>
+                <tr>
+                    <td><strong>Truffle Pasta</strong><br>Black truffles, cream, parmesan</td>
+                    <td><strong>Limoncello Spritz</strong><br>Limoncello, prosecco, soda</td>
+                </tr>
+                <tr>
+                    <td><strong>Porchetta Sandwich</strong><br>Roasted pork, ciabatta bread, rosemary</td>
+                    <td><strong>Ginger Peach Tea</strong><br>Black tea, ginger, peach slices</td>
+                </tr>
+                <tr>
+                    <td><strong>Prosciutto e Melone</strong><br>Prosciutto, cantaloupe</td>
+                    <td><strong>Mint Julep</strong><br>Bourbon, mint, sugar</td>
+                </tr>
+                <tr>
+                    <td><strong>Seafood Risotto</strong><br>Shrimp, scallops, saffron</td>
+                    <td><strong>Bloody Mary</strong><br>Vodka, tomato juice, spices</td>
+                </tr>
+                <tr>
+                    <td><strong>Vegetarian Lasagna</strong><br>Zucchini, eggplant, ricotta</td>
+                    <td><strong>Blueberry Smoothie</strong><br>Blueberries, yogurt, honey</td>
+                </tr>
+                <tr>
+                    <td><strong>Beef Carpaccio</strong><br>Thinly sliced raw beef, capers, arugula</td>
+                    <td><strong>Espresso Martini</strong><br>Espresso, vodka, coffee liqueur</td>
+                </tr>
+                <tr>
+                    <td><strong>Arancini Balls</strong><br>Rice balls, mozzarella, marinara sauce</td>
+                    <td><strong>Pina Colada</strong><br>Rum, coconut cream, pineapple juice</td>
+                </tr>
+                <tr>
+                    <td><strong>Gnocchi Sorrentina</strong><br>Potato gnocchi, tomato sauce, mozzarella</td>
+                    <td><strong>Matcha Latte</strong><br>Matcha green tea, steamed milk</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="drink-image-box">
+            <img src="Drink.jpg" alt="Drink Image">
+        </div>
+
+        <h3>Reserve a Table</h3>
+        <div id="reserve-section" class="reservation-form">
+            <form id="reservation-form">
+                <input type="text" placeholder="Name" name="name" class="form-input">
+                <input type="email" placeholder="Email" name="email" class="form-input">
+                <input type="tel" placeholder="Phone Number" name="phone" class="form-input">
+                <input type="date" placeholder="mm/dd/yyyy" name="date" class="form-input">
+                <input type="time" placeholder="hh:mm" name="time" class="form-input">
+                <input type="number" placeholder="Number Of Persons" name="people" class="form-input">
+                <textarea placeholder="Message / Special Requirement" name="message" class="form-input"></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
