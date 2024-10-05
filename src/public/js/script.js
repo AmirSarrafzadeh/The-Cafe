@@ -1,4 +1,4 @@
-document.getElementById('reservation-form').addEventListener('submit', function(event) {
+document.getElementById('reservation-form').addEventListener('submit', async function(event) {
     console.log("Form submission intercepted"); // Check if this logs when you submit the form
     event.preventDefault(); // Prevent default form submission behavior
 
@@ -23,23 +23,25 @@ document.getElementById('reservation-form').addEventListener('submit', function(
     };
 
     // Send POST request
-    fetch('https://coffeeshop-backend-02313602baca.herokuapp.com/api/v1/saveReservation', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => {
-        console.log(response);
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
-        alert('Reservation submitted successfully!');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('There was an error submitting the reservation.');
-    });
+    try {
+        const response = await fetch('/api/v1/reservation/save', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        const rData= await response.json()
+        if (response.status !== 201) {
+            alert(
+                rData.message
+            )
+        }
+        alert('Reservation successfully created');
+    }
+    catch{(error => {
+            console.error('Error:', error);
+            alert('There was an error submitting the reservation.');
+        })
+    }
 });

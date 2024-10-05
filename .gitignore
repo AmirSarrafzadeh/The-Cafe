@@ -14,4 +14,42 @@ __pycache__/
 # Docker and local environment files
 docker-compose.override.yml
 
+
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Debugging output
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage directory
+coverage/
+
+# Production build
+build/
+
+# Temporary files
+tmp/
+temp/
+
+# IDE specific
+.idea/
+*.iml
+
  
